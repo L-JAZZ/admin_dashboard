@@ -1,25 +1,27 @@
 <template>
-  <div class="mx-auto pa-8 mt-16">
+  <div class="mx-auto pa-8 mt-16 align-content-center">
     <v-card
         class="mx-auto pa-8 mt-16"
         max-width="550"
-        min-width="550"
         color="#eeeeee"
         rounded
     >
     <form>
-      <v-spacer></v-spacer>
-      <div class="mx-auto">
-        <img src="LOGO.svg" alt="">
+      <div class="mx-auto" style="width: 30%">
+        <img src="LOGO.svg" alt="" width="100">
       </div>
 
       <v-text-field
+          class="mt-5"
           v-model="email"
           :error-messages="emailErrors"
           label="E-mail"
           required
           @input="$v.email.$touch()"
           @blur="$v.email.$touch()"
+          style="width: 350px"
+          background-color="#eeeeeee"
+          outlined
       ></v-text-field>
 
       <v-text-field
@@ -27,19 +29,20 @@
           :rules="[rules.password]"
           required
           label="Password"
-          style="min-height: 96px"
+          style="min-height: 96px; width: 350px;"
           type="password"
+          outlined
       ></v-text-field>
-
 
       <v-btn
           tile
-          class="mr-2 ml-2"
+          class=""
           elevation="0"
           dark
           large
-          to="/payments "
+          to="/payments"
           @click="submit"
+          style="margin-left: 120px"
       >
         <span>Выход</span>
       </v-btn>
@@ -96,4 +99,8 @@ export default {
   },
 }
 </script>
+
+<style>
+
+</style>
 
