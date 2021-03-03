@@ -1,17 +1,18 @@
 <template>
   <v-main class="mx-5">
-    <h1>Платежи</h1>
+    <h3>Платежи</h3>
+    <payment-table/>
   </v-main>
 </template>
 
 <script>
-
+import PaymentTable from "@/components/PaymentTable";
 
 export default {
   name: "Payments",
 
-  mounted() {
-    this.$forceUpdate()
+  components:{
+    PaymentTable
   }
 }
 </script>

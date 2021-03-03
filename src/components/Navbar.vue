@@ -46,7 +46,7 @@
       <v-icon>mdi-wrench</v-icon>
     </v-btn>
 
-    <h3 class="ml-5">Имя Фамилия</h3>
+    <h3 class="ml-5">{{ name }} {{ surname }}</h3>
     <div class="mr-5">
       <v-icon class="ml-3" large>mdi-account-circle</v-icon>
     </div>
@@ -59,6 +59,8 @@
 export default {
   name: "Navbar",
   data: () => ({
+    name:'Имя',
+    surname:'Фамилия'
   }),
   beforeUpdate() {
 
