@@ -1,7 +1,7 @@
 <template>
-  <v-container>
-    <h1>Init info</h1>
-  </v-container>
+  <v-main class="mx-5">
+    <h1>Терминалы</h1>
+  </v-main>
 </template>
 
 <script>

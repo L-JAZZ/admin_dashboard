@@ -1,12 +1,6 @@
 <template>
-
-  <v-main>
-    <h1>Init info</h1>
-    <h1>Init info</h1>
-    <h1>Init info</h1>
-    <h1>Init info</h1>
-    <h1>Init info</h1>
-    <h1>Init info</h1>
+  <v-main class="mx-5">
+    <h1>Платежи</h1>
   </v-main>
 </template>
 
