@@ -4,6 +4,7 @@
       app
       color="primary"
       dark
+      flat
     >
       <div class="d-flex align-center">
         <v-img
