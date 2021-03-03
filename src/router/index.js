@@ -5,12 +5,18 @@ import Dashboard from "@/views/Dashboard";
 import Payments from "@/views/Payments";
 import Terminals from "@/views/Terminals";
 import Users from "@/views/Users";
+import Login from "@/views/Login";
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/payments',
     name: 'Payments',
     component: Payments
   },

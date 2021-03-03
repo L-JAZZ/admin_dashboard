@@ -1,7 +1,7 @@
-<template>
+<template >
   <v-app-bar
       app
-      color="transparent"
+      color="white"
       flat
   >
     <img src="LOGO.svg" alt="asd" width="100">
@@ -14,6 +14,7 @@
         elevation="0"
         dark
         large
+        to="/"
     >
       <span>Выход</span>
 
@@ -23,7 +24,7 @@
         elevation="0"
         class="mr-2 ml-2 transparent"
         width="15px"
-        id="ddd"
+        id="d1"
     >
       <v-icon>mdi-home</v-icon>
     </v-btn>
@@ -31,7 +32,7 @@
     <v-btn
         elevation="0"
         class="mr-2 ml-2 transparent"
-        id="ddd"
+        id="d2"
 
     >
       <v-icon>mdi-bell</v-icon>
@@ -40,7 +41,7 @@
     <v-btn
         elevation="0"
         class="mr-2 ml-2 transparent"
-        id="ddd"
+        id="d3"
     >
       <v-icon>mdi-wrench</v-icon>
     </v-btn>
@@ -56,12 +57,17 @@
 
 <script>
 export default {
-  name: "Navbar"
+  name: "Navbar",
+  data: () => ({
+  }),
+  beforeUpdate() {
+
+  }
 }
 </script>
 
 <style scoped>
-#ddd{
+#d1,#d2,#d3{
   width: 36px;
   min-width: 36px;
 }

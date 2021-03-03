@@ -5,8 +5,14 @@
 </template>
 
 <script>
+
+
 export default {
-  name: "Payments"
+  name: "Payments",
+
+  mounted() {
+    this.$forceUpdate()
+  }
 }
 </script>
 
