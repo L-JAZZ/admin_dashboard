@@ -5,6 +5,7 @@
         max-width="550"
         color="#eeeeee"
         rounded
+
     >
     <form>
       <div class="mx-auto" style="width: 30%">
@@ -42,9 +43,9 @@
           large
           to="/payments"
           @click="submit"
-          style="margin-left: 120px"
+          style="margin-left: 130px"
       >
-        <span>Выход</span>
+        <span>Вход</span>
       </v-btn>
     </form>
     </v-card>

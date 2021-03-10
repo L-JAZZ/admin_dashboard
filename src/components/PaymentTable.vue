@@ -4,6 +4,7 @@
       :items="logs"
       class="elevation-1 mx-auto"
       style="max-width: 80%;"
+
   >
 
     <template v-slot:item.status="{ item }">
@@ -27,7 +28,6 @@ export default {
         {
           text: 'Референс',
           align: 'start',
-          sortable: false,
           value: 'reference',
         },
         {text: 'Аккаунт', value: 'account'},
@@ -118,6 +118,47 @@ export default {
           status: 'ERROR',
           statusID: 0
         },
+        {
+          reference: '15141215',
+          account:'1',
+          bank: 'Qiwi Payment',
+          bankId: 'QIWT',
+          carbs: 24,
+          date: 4.0,
+          status: 'NORMAL',
+          statusID: 1
+        },
+        {
+          reference: '15141215',
+          account:'1',
+          bank: 'Qiwi Payment',
+          bankId: 'QIWT',
+          carbs: 24,
+          date: 4.0,
+          status: 'NORMAL',
+          statusID: 1
+        },{
+          reference: '15141215',
+          account:'1',
+          bank: 'Qiwi Payment',
+          bankId: 'QIWT',
+          carbs: 24,
+          date: 4.0,
+          status: 'NORMAL',
+          statusID: 1
+        },{
+          reference: '15141215',
+          account:'1',
+          bank: 'Qiwi Payment',
+          bankId: 'QIWT',
+          carbs: 24,
+          date: 4.0,
+          status: 'NORMAL',
+          statusID: 1
+        },
+
+
+
       ],
     }
   },

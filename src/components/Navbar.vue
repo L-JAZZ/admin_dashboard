@@ -4,6 +4,39 @@
       color="white"
       flat
   >
+
+    <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+
+    <v-navigation-drawer
+        v-model="drawer"
+        absolute
+        temporary
+    >
+      <v-list
+          nav
+          dense
+      >
+        <v-list-item-group
+            v-model="group"
+            active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Home</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-account</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Account</v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+
     <img src="LOGO.svg" alt="asd" width="100">
 
     <v-spacer></v-spacer>
@@ -60,7 +93,9 @@ export default {
   name: "Navbar",
   data: () => ({
     name:'Имя',
-    surname:'Фамилия'
+    surname:'Фамилия',
+    drawer: false,
+    group: null,
   }),
   beforeUpdate() {
 
