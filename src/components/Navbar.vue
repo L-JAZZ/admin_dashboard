@@ -5,8 +5,7 @@
         color="white"
         flat
     >
-      <v-app-bar-nav-icon @click="drawer = true"/>
-
+      <v-app-bar-nav-icon @click="drawer = true" class=""/>
       <img src="LOGO.svg" alt="asd" width="100">
 
       <v-spacer></v-spacer>
@@ -49,10 +48,8 @@
         <v-icon>mdi-wrench</v-icon>
       </v-btn>
 
-      <h3 class="ml-5">{{ name }} {{ surname }}</h3>
-      <div class="mr-5">
-        <v-icon class="ml-3" large>mdi-account-circle</v-icon>
-      </div>
+      <span class="ml-5 font-weight-bold">{{ name }} {{ surname }}</span>
+      <v-icon class="ml-3" large>mdi-account-circle</v-icon>
 
     </v-app-bar>
 
@@ -84,7 +81,11 @@
             v-model="group"
             active-class=""
         >
-          <v-list-item v-for="item in navbarItems" :to="item.url">
+          <v-list-item
+              v-for="(item,i) in navbarItems"
+              :key="i"
+              :to="item.url"
+          >
             <v-list-item-icon >
               <v-icon>{{item.icon}}</v-icon>
             </v-list-item-icon>
@@ -92,9 +93,12 @@
             <v-list-item-title>
               {{ item.text }}
             </v-list-item-title>
+
           </v-list-item>
         </v-list-item-group>
+
       </v-list>
+
     </v-navigation-drawer>
   </div>
 </template>

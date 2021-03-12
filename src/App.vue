@@ -25,7 +25,9 @@ export default {
     Navbar,
   },
 
-  methods: {},
+  methods: {
+
+  },
 
   // need to fix visibility of navbar on login page
 
