@@ -3,11 +3,9 @@
 
     <router-view></router-view>
 
-    <v-main>
-      <div v-if="vis">
-        <Navbar/>
-      </div>
-    </v-main>
+    <div v-if="vis">
+      <Navbar/>
+    </div>
 
   </v-app>
 
@@ -20,16 +18,14 @@ export default {
   name: 'App',
 
   data: () => ({
-    vis:true
+    vis: true
   }),
 
   components: {
     Navbar,
   },
 
-  methods:{
-
-  },
+  methods: {},
 
   // need to fix visibility of navbar on login page
 
@@ -41,7 +37,6 @@ export default {
   //     this.vis = true
   //   }
   // },
-
 
 
 };
